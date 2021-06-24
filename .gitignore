@@ -2,3 +2,4 @@ build/
 dist/
 internet_speed.csv
 speed-chart-go*
+speed-chart_*
