@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chart</title>
+    <script src="https://cdn.plot.ly/plotly-2.1.0.min.js"></script>
+  </head>
+
+  <body>
+    <div id="chart"></div>
+
+    <script>
+      var data = {{.}};
+    </script>
+    <script>
+      Plotly.newPlot("chart", {
+        data,
+        layout: { yaxis: { rangemode: "tozero" } },
+      });
+    </script>
+  </body>
+</html>
